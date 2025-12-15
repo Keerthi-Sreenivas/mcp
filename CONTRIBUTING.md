@@ -28,6 +28,16 @@ Contributions via pull requests are much appreciated. Before sending us a pull r
 
 The [Developer guide](DEVELOPER_GUIDE.md) provides the steps to set up your dev environment and make sure your code is ready before you submit your pull request.
 
+### Required Contributor Statement
+
+**IMPORTANT**: All pull requests must include the following contributor statement in the PR description:
+
+```
+By submitting this pull request, I confirm that you can use, modify, copy, and redistribute this contribution, under the terms of the [project license](https://github.com/awslabs/mcp/blob/main/LICENSE).
+```
+
+This statement is automatically included in the pull request template and is required by our pull-request-lint workflow. If your PR description is missing this statement, the automated checks will fail. This confirms that your contribution is made under the terms of the Apache 2.0 license.
+
 ### Special `./README.md` considerations for new MCP servers
 
 When adding a new MCP server, you must update the README.md to include your server in the appropriate categories under "Available MCP Servers". Add it to both the "Browse by What You're Building" and "Browse by How You're Working" sections with a brief description that clearly explains its purpose. Include a link to the server's directory using the pattern `src/your-server-name/`. Ensure your server's description is consistent with the style of existing entries.
@@ -51,4 +61,4 @@ If you discover a potential security issue in this project we ask that you notif
 
 ## Licensing
 
-See the [LICENSE](LICENSE) file for our project's licensing. We will ask you to confirm the licensing of your contribution.
+See the [LICENSE](LICENSE) file for our project's licensing. All contributions must be made under the terms of the Apache 2.0 license. You confirm this by including the required contributor statement in your pull request description (see [Contributing via Pull Requests](#contributing-via-pull-requests) section above).
