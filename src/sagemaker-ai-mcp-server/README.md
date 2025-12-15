@@ -21,6 +21,9 @@ This quickstart guide walks you through the steps to configure the Amazon SageMa
 
 **Set up Cursor**
 
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](https://kiro.dev/launch/mcp/add?name=awslabs.sagemaker-ai-mcp-server&config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22awslabs.sagemaker-ai-mcp-server%40latest%22%2C%22--allow-write%22%2C%22--allow-sensitive-data-access%22%5D%2C%22env%22%3A%7B%22AWS_PROFILE%22%3A%22your-profile%22%2C%22AWS_REGION%22%3A%22us-east-1%22%7D%7D)
+<br/>
+
 | Cursor | VS Code |
 |:------:|:-------:|
 | [![Install MCP Server](https://cursor.com/deeplink/mcp-install-light.svg)](https://cursor.com/en/install-mcp?name=awslabs.sagemaker-ai-mcp-server&config=eyJhdXRvQXBwcm92ZSI6W10sImRpc2FibGVkIjpmYWxzZSwiY29tbWFuZCI6InV2eCBhd3NsYWJzLnNhZ2VtYWtlci1haS1tY3Atc2VydmVyQGxhdGVzdCAtLWFsbG93LXdyaXRlIC0tYWxsb3ctc2Vuc2l0aXZlLWRhdGEtYWNjZXNzIiwiZW52Ijp7IkZBU1RNQ1BfTE9HX0xFVkVMIjoiRVJST1IifSwidHJhbnNwb3J0VHlwZSI6InN0ZGlvIn0%3D) | [![Install on VS Code](https://img.shields.io/badge/Install_on-VS_Code-FF9900?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=SageMaker%20AI%20MCP%20Server&config=%7B%22autoApprove%22%3A%5B%5D%2C%22disabled%22%3Afalse%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22awslabs.sagemaker-ai-mcp-server%40latest%22%2C%22--allow-write%22%2C%22--allow-sensitive-data-access%22%5D%2C%22env%22%3A%7B%22FASTMCP_LOG_LEVEL%22%3A%22ERROR%22%7D%2C%22transportType%22%3A%22stdio%22%7D) |
@@ -34,49 +37,49 @@ The example below includes both the `--allow-write` flag for mutating operations
 
    **For Mac/Linux:**
 
-	```
-	{
-	  "mcpServers": {
-	    "awslabs.sagemaker-ai-mcp-server": {
-	      "command": "uvx",
-	      "args": [
-	        "awslabs.sagemaker-ai-mcp-server@latest",
-	        "--allow-write",
-	        "--allow-sensitive-data-access"
-	      ],
-	      "env": {
-	        "FASTMCP_LOG_LEVEL": "ERROR"
-	      },
-	      "autoApprove": [],
-	      "disabled": false
-	    }
-	  }
-	}
-	```
+        ```
+        {
+          "mcpServers": {
+            "awslabs.sagemaker-ai-mcp-server": {
+              "command": "uvx",
+              "args": [
+                "awslabs.sagemaker-ai-mcp-server@latest",
+                "--allow-write",
+                "--allow-sensitive-data-access"
+              ],
+              "env": {
+                "FASTMCP_LOG_LEVEL": "ERROR"
+              },
+              "autoApprove": [],
+              "disabled": false
+            }
+          }
+        }
+        ```
 
    **For Windows:**
 
-	```
-	{
-	  "mcpServers": {
-	    "awslabs.sagemaker-ai-mcp-server": {
-	      "command": "uvx",
-	      "args": [
-	        "--from",
-	        "awslabs.sagemaker-ai-mcp-server@latest",
-	        "awslabs.sagemaker-ai-mcp-server.exe",
-	        "--allow-write",
-	        "--allow-sensitive-data-access"
-	      ],
-	      "env": {
-	        "FASTMCP_LOG_LEVEL": "ERROR"
-	      },
-	      "autoApprove": [],
-	      "disabled": false
-	    }
-	  }
-	}
-	```
+        ```
+        {
+          "mcpServers": {
+            "awslabs.sagemaker-ai-mcp-server": {
+              "command": "uvx",
+              "args": [
+                "--from",
+                "awslabs.sagemaker-ai-mcp-server@latest",
+                "awslabs.sagemaker-ai-mcp-server.exe",
+                "--allow-write",
+                "--allow-sensitive-data-access"
+              ],
+              "env": {
+                "FASTMCP_LOG_LEVEL": "ERROR"
+              },
+              "autoApprove": [],
+              "disabled": false
+            }
+          }
+        }
+        ```
 
 3. Verify your setup by running the `/tools` command in the Q Developer CLI to see the available SageMaker AI MCP tools.
 
